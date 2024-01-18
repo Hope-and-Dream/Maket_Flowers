@@ -1,0 +1,173 @@
+.footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 165px;
+    padding-bottom: 65px;
+    gap: 10px;
+}
+
+.footer_info {
+    width: 20%;
+}
+
+.footer_info>p {
+    font-family: Oswald;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+}
+
+.footer_info__logo {
+    width: 34px;
+    height: 75px;
+    font-family: Cormorant;
+    position: relative;
+}
+
+.footer_info__logo>p:first-child {
+    color: #8A8686;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.footer_info__logo>p:last-child {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+}
+
+.footer_wrapper h3 {
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer_wrapper ul {
+    list-style: none;
+}
+
+.footer_wrapper li {
+    font-family: Oswald;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.footer_catalog, .footer_buket, .footer_menu, .footer_contacts {
+    margin-top: 30px;
+}
+
+.footer_menu {
+    width: 14%;
+}
+
+.footer_menu li {
+    margin-bottom: 20px;
+}
+
+.footer_contacts .aqua {
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.footer_contacts .aqua+p {
+    font-family: Oswald;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 6px;
+    margin-bottom: 20px;
+}
+
+.footer_contacts>svg {
+    margin-top: 18px;
+}
+
+@media (max-width:1150px)  {
+.footer_wrapper {
+    padding: 0px 38px 20px 38px;
+}
+
+    .footer_catalog, .footer_buket {
+        display: none;
+    }
+}
+
+@media (max-width:750px) {
+    .footer_wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px 20px 10px ;
+    }
+
+    .footer_wrapper>div {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .footer_info {
+        margin-bottom: 20px;
+    }
+
+    .footer_info__logo {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer_info>p {
+        display: none;
+    }
+
+    .footer_info>h3 {
+        display: none;
+    }
+
+    .footer_menu {
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+
+    .footer_contacts {
+        margin-bottom: 40px;
+        margin-top: 0px;
+    }
+}
+

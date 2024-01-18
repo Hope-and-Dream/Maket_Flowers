@@ -1,0 +1,161 @@
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 165px 0px 165px;
+    margin-bottom: 50px;
+}
+
+.form>div:first-child {
+    width: 55%;
+    text-align: end;
+}
+
+.form>div:last-child {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    font-family: Cormorant;
+    font-size: min(6.4vw, 100px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.form h2+p {
+    transform: rotate(-18.444deg);
+    color: #922D2D;
+    font-family: Qwitcher Grypen;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: lowercase;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.form hr {
+    width: 255px;
+    background-color: aqua;
+    align-self: flex-end;
+}
+
+.form hr+p {
+    width: 255px;
+    margin-top: 53px;
+    margin-bottom: 30px;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+    align-self: flex-end;
+
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.form input {
+    height: 60px;
+    text-align: start;
+    border: 1px solid #555;
+    background-color: #040A0A;
+    padding: 20px;
+}
+
+.form input::placeholder {
+    color: #555;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+}
+
+.form textarea {
+    background-color: #040A0A;
+    resize: none;
+    padding: 20px;
+}
+
+.form textarea::placeholder {
+    color: #555;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+}
+
+.form button {
+    width: 255px;
+    height: 50px;
+    flex-shrink: 0;
+    background-color: aqua;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: Oswald;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.form form+p {
+    font-family: Roboto Condensed;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.form p>a {
+    color: #8B3131;
+    text-decoration-line: underline;
+}
+
+@media (max-width:1150px)  {
+    .form {
+        flex-direction: column;
+        padding: 60px 10px 0px 10px;
+    }
+
+    .form>div:first-child {
+        width: 100%;
+        text-align: start;
+        position: relative;
+    }
+
+    .form>div:last-child {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .form h2+p {
+        position: absolute;
+        top: -100px;
+        right: 20%;
+    }
+}

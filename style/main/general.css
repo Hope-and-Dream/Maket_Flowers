@@ -1,0 +1,88 @@
+.general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 93px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 165px;
+}
+
+.general_name>h1, h2 {
+    font-family: Cormorant;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 40px;
+    text-transform: uppercase;
+    
+}
+
+.general_name>h2 {
+    position: relative;
+    z-index: -2;
+}
+
+.general_name>h1 {
+    position: relative;
+    margin-top: calc(153px - 242px);
+}
+
+.general_motto {
+    max-width: 100%;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+
+.general>button {
+    width: 220px;
+    height: 50px;
+    flex-shrink: 0;
+    border: none;
+    margin-top: 47px;
+    background-color: #43FFD2;
+    ;
+}
+
+.general a {
+    color: #000;
+    font-family: Oswald;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+@media (max-width:1150px) {
+    .general_name {
+        display: none;
+    }
+
+    .general {
+        position: absolute;
+        top: 1250px;
+    }
+
+    .general_motto {
+        position: relative;
+        z-index: 1;
+}
+}
+
+@media (max-width:750px){
+    .general {
+        padding: 0 10px;
+    }
+}

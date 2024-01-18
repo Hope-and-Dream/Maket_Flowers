@@ -1,0 +1,34 @@
+body {
+    display: block;
+    width: 100vw;
+    max-width: 1440px;
+    height: max-content;
+    margin: 0 auto;
+    background: #040A0A;
+    color: white;
+    position: relative;
+}
+
+.aqua {
+    color: #43FFD2;
+}
+
+hr, div, p, form, ul, pre, h1, h2, h3 {
+    margin: 0px;
+    padding: 0px
+}
+
+div, section, input {
+    box-sizing: border-box;
+}
+
+a { 
+    color: inherit;
+    text-decoration: none;
+ } 
+
+ button {
+    background: none;
+    border: none;
+    padding: 0;
+}
